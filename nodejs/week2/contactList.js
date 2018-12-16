@@ -56,23 +56,39 @@ class ContactList {
   }
 
 
-  searchByValue(value) {
-    if(typeof value === 'string'){
-      const findName = this._list.filter(contact => contact.name.toLowerCase() === value.toLowerCase());
-      console.log(findName);
-    } else if(typeof value === 'number'){
-      const findPhone = this._list.filter(contact => contact.phone === value);
-      console.log(findPhone);
-    } else{
-      console.log(`${value} doesn't exist on the contacts.`);
+  // searchByValue(value) {
+  //   if(typeof value === 'string'){
+  //     const findName = this._list.filter(contact => contact.name.toLowerCase() === value.toLowerCase());
+  //     console.log(findName);
+  //   } else if(typeof value === 'number'){
+  //     const findPhone = this._list.filter(contact => contact.phone === value);
+  //     console.log(findPhone);
+  //   } else{
+  //     console.log(`${value} doesn't exist on the contacts.`);
+  //   }
+  // }
+  
+    searchBy(key,value){
+        const result = [];
+        for(let i = 0; i < this._list.length ; i++){
+            let eachElement= this._list[i];
+            if(eachElement.hasOwnProperty(key)){
+                if(eachElement[key].toString().toLowerCase().startsWith(value.toString().toLowerCase())){
+                    result.push(eachElement);
+                }
+            } else{
+                throw new Error(`Sorry the ${key} does not exist.`);
+            }
+        }
+    return result;
+    }
+
+    getList() {
+      return this._list;
     }
   }
-  
 
-  getList() {
-    return this._list;
-  }
-}
+
 
 
 

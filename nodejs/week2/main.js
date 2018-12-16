@@ -24,8 +24,9 @@ my_contact_list.add({
 
 // my_contact_list.removeContact('Yana');
 // // my_contact_list.removeContact('Badr');
-my_contact_list.removeContact('huy');
-my_contact_list.searchByValue(42578458);
-my_contact_list.searchByValue('badr');
+// my_contact_list.removeContact('huy');
+const mySearch = my_contact_list.searchBy('name','m');
+console.log(mySearch);
+
 
 console.log(my_contact_list.getList());
