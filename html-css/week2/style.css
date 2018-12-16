@@ -1,0 +1,187 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:lightgrey;
+}
+
+h1,h2{
+	width:100%;
+	height:15%;
+	text-align:center;
+	text-transform:uppercase;
+	font-family:monospace;
+}
+
+h1{
+	margin:25px 10px 0px 10px;
+	font-size:45px;
+	text-shadow:3px 3px white;
+	animation-name: animate;
+    animation-duration: 10s;
+}
+
+
+h2{
+	margin:20px 0;
+	font-size:26px;
+	font-style:oblique;
+	text-decoration:underline overline;
+	display:inline-block;
+	clear:both;
+	animation-name: slidein;
+    animation-duration:6s;
+}
+
+img{
+	width:40%;
+}
+
+.grid-item h3{
+	color:black;
+	font-size:16px;
+	font-family:monospace;
+
+}
+
+.grid-item p{
+	font-size:13px;
+	font-family:sans-serif;
+}
+
+
+
+/* F L O A T */
+
+#grid-floats .grid-item{
+	float:left;
+	width:40%;
+	height:430px;
+	margin:15px;
+	padding:25px 10px;
+	border:4px outset;
+	list-style:none;
+	text-align:center;
+	background:white;
+	box-sizing:border-box;
+}
+
+section #grid-floats li:nth-child(1){
+	width:90%;
+	height:285px;
+	padding:30px 15px;
+}
+
+/* F L E X */
+
+section #grid-flex{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+#grid-flex .grid-item{
+	flex:1 0 38.9%;
+	border:4px outset;
+	margin:15px;
+	padding:20px 15px;
+	text-align:center;
+	list-style:none;
+	background:white;
+	flex-direction:row;
+	box-sizing:border-box;
+}
+
+section #grid-flex li:nth-child(1){
+	flex-basis:90%;
+}
+
+
+/*ANIMATION*/
+
+@keyframes animate {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 20%;
+    width: 200%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* Media Queries */
+
+@media only screen and (min-width:768px){
+
+	.grid-item h3{
+		font-size:18px;
+	}
+
+	.grid-item p{
+		font-size:14px;
+	}
+/* FLOAT*/
+
+	#grid-floats .grid-item{
+		width:29%;
+		height:300px;
+	}
+
+	section #grid-floats li:nth-child(1),section #grid-floats li:nth-child(2){
+		width:46%;
+		height:300px;
+	}
+
+/* FLEX */
+
+	#grid-flex .grid-item{
+		flex-basis:25%;
+	}
+
+	section #grid-flex li:nth-child(1),section #grid-flex li:nth-child(2){
+		flex-basis:45%;
+	}
+
+}
+
+@media only screen and (min-width:1024px){
+	
+	.grid-item h3{
+		font-size:20px;
+	}
+
+	.grid-item p{
+		font-size:15px;
+	}
+
+/* FLOAT*/
+
+	section #grid-floats li:nth-child(1){
+		width:46%;
+	}
+
+	#grid-floats .grid-item,section #grid-floats li:nth-child(2){
+		width:22%;
+	}
+
+/* FLEX */
+
+	section #grid-flex li:nth-child(1){
+		flex-basis:47%;
+	}
+
+	#grid-flex .grid-item,section #grid-flex li:nth-child(2){
+		flex-basis:22%;
+	}
+}

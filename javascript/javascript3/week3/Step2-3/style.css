@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu|Permanent+Marker');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: linear-gradient(to bottom right, rgb(172, 238, 247),rgb(53, 216, 134)); 
+}
+
+
+header{
+    text-align: center;
+    margin:30px 0 50px 0;
+    font-family: 'Permanent Marker';
+    font-size:25px;
+}
+
+img{
+    width:150px;
+}
+
+li{
+    width:150px;
+    height:200px;
+    list-style: none;
+    text-align: center;
+    border:2px outset;
+    border-radius: 5px;
+    box-shadow:-1px -1px 25px rgba(34, 130, 209, 0.7);
+    padding:10px;
+    margin:8px;
+}
+
+.lists{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family: monospace;
+}
+
+.forms{
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}
+
+form{
+    margin:30px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.item-info{
+    margin:5px;
+    padding:2px;
+}
+
+.item-price{
+    margin-bottom:15px;
+}
+
+.btn{
+    margin:10px 40px 20px 90px;
+    padding:5px;
+    font-family: monospace;
+    border-radius: 5px;
+    background: rgba(24, 186, 207, 0.5);
+    box-shadow:-1px -1px 25px rgba(11, 82, 139, 0.7);
+}
+
+.billing-info{
+    margin:0px 30px 20px 50px;
+}
+
+.shop-summary{
+    padding-bottom:10px;
+}
+
+.username{
+    font-size:16px;
+    margin-top:-5px;
+}
+
+.number-items{
+    font-style: italic;
+    font-size:12px;
+}
+
+.total-price{
+    font-weight: bold;
+    font-size:17px;
+    margin-bottom:5px;
+}
+
+.purchases{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size:16px;
+}
+
+.update-btn{
+    padding:5px;
+    background: rgba(24, 186, 207, 0.5);
+    font-weight: bold;
+    font-size:12.5px;
+    margin:0 0 20px 0;
+}

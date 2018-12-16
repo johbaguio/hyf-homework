@@ -1,0 +1,326 @@
+body{
+	background: rgb(254, 217, 152);
+}
+#mypic-png{
+	top:1%;
+	left:6.9%;
+ 	width:27%;
+  	height: auto;
+	position:absolute;
+}
+
+#bulbpic-png{
+	top:1.8%;
+	left:69.3%;
+ 	width:17.3%;
+  	height: auto;
+	position:absolute;
+	display:none;
+}
+
+
+#info p{
+	font-family:monospace;
+	font-size:5px;
+	font-weight:bold;
+	margin-top:-6px;
+	line-height:6px;
+	width: 100%;
+  	height: auto;
+}
+
+#personal-info{
+	background: linear-gradient(to bottom right, #FCB73E,#F1A340);
+	width:81%;
+	margin:auto;
+	border:outset rgb(164, 108, 11);
+	border-radius:5px;
+	border-width:3px;
+	height:14vh;
+}
+
+#info{
+	/*background:rgb(255, 140, 140); */
+	padding:20px;
+	height:200px;
+	text-align:center;
+	line-height:15px;
+}
+
+h1 {
+	font-family:"Baloo Tammudu";
+	font-size:12px;
+	text-transform:uppercase;
+	margin-top:0px;
+	color:black;
+	text-shadow: 2px 2px white;
+}
+
+h2 {
+	color:black;
+	border:outset;
+	font-weight:bold;
+	font-size:13px;
+	font-family:monospace;
+	text-align:center;
+	text-transform:uppercase;
+	padding:8px;
+	margin-bottom:30px;
+	text-shadow: 1px 1px white;
+}
+
+h3{
+	font-family:monospace;
+	font-size:8px;
+	font-weight:bold;
+	text-shadow: 1px 1px black;
+	margin-top:-12px;
+}
+
+dt,h4{
+	font-size:11.5px;
+	font-family:Gudea;
+	font-weight:bold;
+	text-decoration:underline overline;
+	text-align:center;
+	text-transform:uppercase;
+	margin:18px 0px 24px 0px;
+}
+
+dd,li{
+	font-weight:bold;
+	margin:18px 25px 24px 25px;
+}
+
+#center h2{
+	margin:20px 65px 20px 65px;
+}
+
+#hobby-pics{
+	left: 22%;
+ 	width: 50%;
+  	height: auto;
+	position:absolute;
+}
+
+#center p{
+	text-indent: 25px;
+	text-align:justify;
+	line-height: 22px;;
+	margin-bottom:20px;
+	font-size:13px;
+	padding:5px;
+}
+
+#column-left, #column-right{
+	background:rgb(240, 185, 89);
+	padding:2px;
+
+}
+
+#column-left h2{
+	margin: 18px 30px 25px 30px;
+}
+
+#column-right h2{
+	margin: 25px 35px 25px 35px;
+}
+
+.columns{
+	width:81%;
+	height:850px;
+	padding:4px;
+	background:rgb(255, 214, 142);
+	border:outset rgb(164, 108, 11);
+	border-width:2px;
+	margin-left:10px;
+	margin:auto;
+	margin-top:10px;
+	border-radius:4px;
+}
+
+section{
+	font-family:monospace;
+}
+
+
+footer{
+	background: linear-gradient(to bottom right, #FCB73E,#FE8831);
+	width:81%;
+	font-size:10px;
+	text-align:center;
+	font-family:monospace;
+	padding:20px 4.5px 20px 4.6px;
+	font-weight:bold;
+	border:outset rgb(164, 108, 11);
+	border-width:2px;
+	margin:auto;
+	margin-top:10px;
+	border-radius:4px;
+}
+
+.logo{
+	width:23px;
+}
+
+@media only screen and (min-width:768px){
+
+	#mypic-png{
+		top:1.6%;
+		left: 24%;
+ 		width: 14.3%;
+	}
+
+	#bulbpic-png{
+		top:2.6%;
+		left: 65%;
+ 		width: 10.5%;
+ 		display:block;
+	}
+
+	#info p{
+		font-size:8.5px;
+		margin-top:-3px;
+	}
+
+	#personal-info{
+		margin-top:25px;
+		height:19vh;
+	}
+
+	h1 {
+		font-size:20px;
+		margin-top:7px;
+	}
+
+	h2 {
+		font-size:15px;
+	}
+
+	h3{
+		font-size:12px;
+		margin-top:-10px;
+	}
+
+	dt,h4{
+		font-size:12.5px;
+		margin-bottom:5px;
+	}
+
+	dd,li{
+		margin-left:8%;;
+	}
+
+	#center h2{
+		margin:30px 150px 30px 150px;
+	}
+
+	#column-left h2,#column-right h2 {
+		margin: 30px 130px 30px 130px;
+	}
+}
+
+@media only screen and (min-width:1000px){
+
+	#mypic-png{
+		top:0.2%;
+		left:18%;
+		width:15.5%;
+	}
+
+	#bulbpic-png{
+		top:2.1%;
+		left: 65%;
+	 	width:12%;
+		display:block;
+	}
+
+	#info p{
+		font-size:13.5px;
+		line-height:10px;
+	}
+
+	#personal-info{
+		margin-top:15px;
+		height:39vh;
+	}
+
+	#personal-info, footer{
+		margin-left:83px;
+	}
+
+	h1 {
+		font-size:40px;
+		margin-top:45px;
+		margin-bottom:15px;
+	}
+
+	h2 {
+		font-size:22px;
+	}
+
+	h3{
+		font-size:22px;
+		margin-top:-5px;
+
+	}
+
+	dt,h4{
+		font-size:15px;;
+	}
+
+	#center p{
+		padding:0px 10px;
+	}
+
+	#center h2{
+		margin:40px 80px;
+	}
+
+	#hobby-pics{
+		top:84%;
+		left: 27%;
+	}
+
+	#column-left, #column-right{
+		width:21.5%;
+		padding:28px;
+		margin-top:3px;
+		margin-bottom:5px;
+	}
+
+	#center{
+		width:35%;
+		padding:28px;
+		margin-top:3px;
+		margin-bottom:5px;
+
+	}
+
+	.columns{
+		float:left;
+		height:600px;
+		position:relative;
+		height:650px;
+		margin-top:10px;
+	}
+
+	#column-left h2,#column-right h2{
+		margin: 30px 20px 30px 20px;
+	}
+
+
+	section{
+		margin:auto;
+		width:87.5%;
+		height:620px;
+	}
+
+
+	footer{
+		font-size:12px;
+		padding:20px 4.5px 20px 4.5px;
+		margin-top:97px;
+
+		}
+}

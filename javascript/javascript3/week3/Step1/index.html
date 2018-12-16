@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+
+<body>
+    <header>
+        <h1>Movies:</h1>
+        <h2>Imagination at work...</h2>
+    </header>
+    <div class="buttons">
+        <form class="btn">
+            <input type="radio" id="good" class="btn radio-btn">Good Movies 
+            <input type="radio" id="average" class="btn radio-btn">Average Movies 
+            <input type="radio" id="bad" class="btn radio-btn">Bad Movies 
+      
+            <select name="Movies" class="dropdown" id="sort-movies" onchange="sortMovies()" id="">
+                <option value="Titles">Titles</option>
+                <option value="Rating">Rating</option>
+                <option value="Year" >Year</option>
+            </select>
+        </form>
+    </div>
+    <div id="output"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

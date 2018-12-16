@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Gaegu|Satisfy|Special+Elite');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url(film.png);
+    background-size: 100%;
+}
+
+header{
+    text-align: center;
+    margin:45px 0 25px 0;
+    background-image: url();
+}
+
+header h1{
+    font-family: 'Special Elite';
+    font-size:45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+header h2{
+    font-family: Caveat;
+    font-size:30px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+.buttons{
+    display:flex;
+    justify-content: center;
+    border-bottom: inset 4px white;
+    padding-bottom:20px;
+}
+
+.btn{
+    padding:8px;
+    margin:8px;
+    border: outset 2px rgb(30, 169, 194);
+    border-radius:4px;
+    background: rgb(57, 196, 221, 0.5);
+    font-family: monospace;
+    font-weight: bold;
+}
+
+
+.srchBtn{
+    border: inset 2px rgb(30, 169, 194);
+    background: none;
+}
+
+.go{
+    margin:-12px;
+    border: outset 2px rgb(30, 169, 194);
+    background: rgb(57, 196, 221, 0.5);
+}
+
+.btn-poster{
+    font-size:10px;
+    font-weight:bold;
+    background:none;
+    padding:4px;
+   
+}
+
+.btn:hover {
+    background-color: #2dbadd;
+}
+
+.quotes{
+    padding:0 10px;
+    font-size:15px;
+    margin:10px 20px;
+    text-align: center;
+}
+
+.quotes h4{
+    font-family: monospace;
+    font-style: italic;
+}
+
+.quotes h1{
+    font-family: 'Special Elite';
+}
+
+
+.quotes1{
+    margin:10px 0 15px 180px;
+    border-radius: 5px;
+    box-shadow:-1px -1px 25px rgb(194, 77, 77,0.7);
+    padding:10px;
+    font-size:12px;
+}
+
+.quotes2{
+    margin:38px 0 10px 150px;
+    box-shadow:-2px -2px 50px rgb(255, 169, 112);
+    padding:10px;
+    border-radius: 5px;
+}
+
+.quotes3{
+    margin-left:10px;
+    font-size:22px;
+    margin-bottom:15px;
+    padding:15px;
+    border-radius: 5px;
+    box-shadow:-1px -1px 25px rgba(48, 206, 206, 0.7);
+}
+
+.quotes3 h4{
+    font-size:15px;
+   
+}
+
+.quotes4{
+    margin:30px 0 25px 500px;
+    padding:11px;
+    border-radius: 5px;
+    box-shadow:-1px -1px 25px rgba(34, 209, 151, 0.7);
+    position: absolute;
+    font-size:12px;
+}
+
+.quotes1:hover{
+    background: rgb(194, 77, 77, 0.5);
+}
+
+.quotes2:hover{
+    background: rgb(255, 169, 112, 0.5);
+}
+
+.quotes3:hover{
+    background: rgb(48, 206, 206,0.5);
+}
+
+.quotes4:hover{
+    background: rgba(34, 209, 151,0.5);
+}
+
+li{
+    list-style: none;
+    border: outset 4px rgb(255, 255, 255);
+    background: rgba(183, 233, 241, 0.5);
+    font-family: Gaegu;
+    padding:20px;
+    margin:15px;
+    text-align: center;
+}
+
+
+li:hover{
+    background: rgb(57, 196, 221, 0.5);
+}
+
+#output{
+    display:flex;
+    flex-wrap: wrap;
+    margin:20px 50px;
+    border: inset 4px white;
+    padding:10px;
+}
+
+ul{
+    flex:1 0 18%;
+}
+
+.ave-rate{
+    font-family: Satisfy;
+    font-size:25px;
+    margin:0 auto;
+}
+
+.rate{
+    font-family: Gaegu;
+}
+
+.total{
+    font-family: Satisfy;
+    text-align: center;
+    font-size:23px;
+    margin:15px 19px;
+    
+}
+
+.poster-img{
+    width:100px;
+    transition: transform .2s;
+}
+
+.poster-img:hover{
+    border:2px solid black;
+    transform: scale(2.5); 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d6faef;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-family: monospace;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(138, 233, 201);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #2dbadd;
+}

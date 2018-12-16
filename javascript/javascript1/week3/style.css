@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Charmonman|Pacifico');
+
+*{
+	margin:0;
+    padding:0;
+}
+body{
+    background:rgb(250, 193, 127);
+}
+header{
+    text-align: center;
+    padding: 60px 10px;
+    margin-bottom: 15px;
+    background:rgb(218, 129, 27);
+    border-bottom: 4px solid rgb(0, 0, 0);
+}
+
+h1{
+    font-family: 'Charmonman', cursive;
+    word-spacing: 10px; 
+    
+
+}
+
+h2{
+    font-family: 'Amatic SC', cursive;
+    margin-top: -10px;
+}
+
+div #grid-flex{
+    display:flex;
+	flex-wrap:wrap;
+}
+
+#grid-flex .grid-item{
+	flex:1 0 10%;
+	border:3px inset rgba(224, 134, 15, 0.952);
+	margin: 10px 20px;
+	padding:20px 15px;
+	text-align:center;
+	list-style:none;
+    background:rgb(230, 147, 53);
+	flex-direction:row;
+    box-sizing:border-box;
+}
+
+.book-pic{
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+}
+
+.title{
+    font-family: 'Amatic SC', cursive;; 
+    text-transform: uppercase;
+    font-size: 28px;
+ 
+}
+
+.author{
+    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
+    padding:2px;
+}
+
+.language{
+    font-family: 'Charmonman', cursive;
+    margin-bottom:10px;
+    font-weight: bold;
+    font-size: 12px;
+}

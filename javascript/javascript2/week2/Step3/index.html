@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JS2 Week2/Step3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="https://avatars2.githubusercontent.com/u/20858568?v=4" alt="HYF logo" class="logo">
+    <h1 class="title"> Repositories </h1>
+    <div class="buttons">
+      <input id="all-repos" class="btn btn1" type="button" value="Show all Repos">
+      <input id="repo-names" class="btn btn2" type="button" value="Repo Names">
+      <div id = "searchBar"> 
+        <input type="text" id="search" class="srchBtn textBox" maxlength="35" autocomplete="off"  placeholder="Repo name...">
+        <input type="button" id="goButton" class="srchBtn go" value="Go"> 
+      </div>
+    </div>
+
+    <hr>
+    <div id="output" class="text names">
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

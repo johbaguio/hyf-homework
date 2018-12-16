@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Rosario');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.title{
+    font-family: monospace;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo{
+    display:none;
+    
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.btn{
+    margin:5px;
+    padding:8px;
+    border-radius: 10px;
+    
+}
+
+.btn1{
+    border: solid 2px rgb(49, 77, 51);
+    background-color: rgb(157, 247, 164);
+}
+
+.btn2{
+    border: solid 2px rgb(60, 76, 107);
+    background-color: rgb(166, 204, 253);
+}
+
+.srchBtn{
+    border-radius: 5px;
+    padding:8px;
+}
+
+#searchBar{
+    margin-top: 6px;
+    margin-left:5px;
+    
+}
+
+.go{
+    border: solid 2px rgb(93, 170, 144);
+    background-color: rgb(122, 236, 179);
+}
+
+
+
+
+.names {
+    font-family: 'Rosario', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.names h2{
+    text-align: center;
+}
+.names li{
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding:12px; 
+    border-radius: 5px;
+    background-color: rgb(173, 236, 194);
+}
+
+.names ul{
+    flex:1 0 25%;
+    border: 2px outset;
+    border-radius: 5px;
+    margin: 2px 50px;   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.names:hover{
+    background-color: rgb(202, 233, 212);
+}
+
+.names li:hover{
+    background-color: rgb(239, 248, 242);
+}
+
+
+
+@media only screen and (min-width:768px){
+    .logo{
+        display: block;
+        width:150px;
+        position: absolute;
+        margin-top:-20px;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (min-width:1024px){
+
+    .logo{
+        margin-left: 20%;
+    }
+}

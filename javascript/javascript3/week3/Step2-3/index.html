@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />  
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+    <div id="container" class = "lists"></div>
+    <div class="forms">
+        <form>
+            Name:  <input class="item-name item-info name" type="text" name="ItemName"><br>
+            Price:<input  class="item-price item-info price" type="text" name="Price"><br>
+            <input type="button" class="btn" value="Add item" onclick="addItemButton()"> 
+        </form>
+        <div id='user-info' class = "billing-info">
+            
+        </div>
+    </div>
+   
+
+    <script src="main.js"></script>
+</body>
+</html>
