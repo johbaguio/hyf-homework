@@ -85,6 +85,7 @@ input{
   padding:6px;
 }
 
-.line{
+
+.completed-toDo{
   text-decoration: line-through;
 }
