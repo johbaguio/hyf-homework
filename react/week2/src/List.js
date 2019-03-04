@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class ToDoList extends React.Component{
     render(){
         const deleteItem = this.props.deleteItem;
@@ -16,6 +17,11 @@ class ToDoList extends React.Component{
                 </span>
                 <button onClick={() => deleteItem(data.id)}> x </button>
             </li>));
+
+        if(list.length === 0){
+            return <h4> ✓ Nothing left to do...</h4>
+        }
+    
         return (
             
             <div id = 'details'>
@@ -24,7 +30,6 @@ class ToDoList extends React.Component{
         )
     }
 }
-
 
 
 export default ToDoList;

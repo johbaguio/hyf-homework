@@ -65,10 +65,9 @@ class ToDoApp extends React.Component{
 
 
     render(){
-        if(this.state.toDoList.length === 0){
-            console.log('hey')
-            return <h3> Nothing to do...</h3>
-        }
+        // if(this.state.toDoList.length === 0){
+        //     return <h3> Nothing to do...</h3>
+        // }
         return(
             <div id = 'container'>
                 <Header /> 
