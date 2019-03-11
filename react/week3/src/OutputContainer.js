@@ -1,38 +1,45 @@
 import React from 'react';
 import Header from './components/Header';
 import ToDoList from './components/List';
-import Forms from './components/Forms';
 // import Footer from './Footer';
 
 
-// const dueDates = ['Wed Sep 13 2017', 'Thu Sep 14 2017', 'Fri Sep 15 2017'];
-let date = new Date();
-let deadline = date.toDateString();
+// const dueDates = ['Wed Sep 13 2017', 'Thu Sep 14 2017', 'Thu Sep 14 2017'];
+// let date = new Date();
+// let deadline = date.toDateString();
 class ToDoApp extends React.Component{
 
     constructor(props) {
         super(props);
+        this.id = 0;
         this.state = { toDoList : [
             {
               "id": 1,
               "description": "Get out of bed",
-              "date": deadline,
-              "done": true
+              "date": new Date('Thu Sep 13 2018').toDateString(),
+              "done": true,
+              "isEdit": false
             },
             {
               "id": 2,
               "description": "Brush teeth",
-              "date": deadline,
-              "done": false
+              "date": new Date('Fri Sep 14 2018').toDateString(),
+              "done": false,
+              "isEdit": false
             },
             {
               "id": 3,
               "description": "Eat breakfast",
-              "date": deadline,
-              "done": false
+              "date": new Date('Tue Sep 18 2018').toDateString(),
+              "done": false,
+              "isEdit": false
             }
           ],
-          inputText: ''}
+          inputText: '',
+          inputDate: '',
+          editToDo: '',
+          editDate: ''
+        }
     }
 
     componentDidMount(){
@@ -43,8 +50,9 @@ class ToDoApp extends React.Component{
         const newTodos = this.state.toDoList.concat({
             "id": this.state.toDoList.length + 1,
             "description": this.state.inputText,
-            "date": deadline,
-            "done": false
+            "date": new Date(this.state.inputDate).toDateString(),
+            "done": false,
+            "isEdit": false
           });
         this.setState({ toDoList: newTodos });
         console.log(newTodos)
@@ -53,6 +61,12 @@ class ToDoApp extends React.Component{
     newToDoInput = (x) => {
         const typedText = x.target.value;
         this.setState({inputText: typedText})
+
+    };
+
+    newDateInput = (x) => {
+        const typedDate = x.target.value;
+        this.setState({inputDate: new Date(typedDate).toDateString()})
 
     };
 
@@ -73,20 +87,33 @@ class ToDoApp extends React.Component{
         this.setState({ toDoList: this.state.toDoList})
     };
 
+    handleSubmit = e => {
+        e.preventDefault();
+    };
 
     render(){
-        // if(this.state.toDoList.length === 0){
-        //     return <h3> Nothing to do...</h3>
-        // }
+        console.log('state of inputText is ', this.state.inputText)
         return(
             <div id = 'container'>
                 <Header /> 
                 <div id = 'lists'>
                     <div className = 'info toDos'>
                         <h3> What to do?</h3> <hr /><br />
-                        < Forms newTodo = {this.addToDo}/>
-                        {/* <input placeholder="Type a new to do here" value ={this.inputText} onChange={this.newToDoInput}/>
-                        <button onClick = {this.addToDo}>Add</button> */}
+                        <form onSubmit={this.handleSubmit}>
+                            <input 
+                                type="text"
+                                value = {this.inputText}
+                                placeholder = "Type a new to do here"
+                                onChange={this.newToDoInput}
+                            />
+                            <input 
+                                type="date"
+                                name = "date"
+                                value = {this.inputDate}
+                                onChange={this.newDateInput}
+                            />
+                            <button onClick = {this.addToDo} className='addBtn'>Add</button>  
+                        </form>
                         <ToDoList info = {this.state.toDoList} editToDo = {this.editItem} deleteItem = {this.deleteTodo} toDoStatus = {this.completedToDo} />
                     </div>
                 </div>
